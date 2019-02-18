@@ -1,4 +1,4 @@
-Ansible Role: Nextcloud
+Ansible Role: Nextcloud Upgrade
 =========
 
 An Ansible Role that upgrades Nextcloud on RedHat/CentOS.
