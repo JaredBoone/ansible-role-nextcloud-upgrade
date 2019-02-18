@@ -1,0 +1,5 @@
+---
+# Nextcloud variables
+nextcloud_webserver_document_root: /var/www/html
+nextcloud_instance_name: nextcloud
+nextcloud_install_dir: '{{ nextcloud_webserver_document_root }}/{{ nextcloud_instance_name }}'
