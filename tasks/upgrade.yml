@@ -36,6 +36,12 @@
   become_user: apache
   tags: 'upgrade'
 
+- name: add missing indices
+  command: 'php {{ nextcloud_install_dir }}/occ db:add-missing-indices'
+  become: true
+  become_user: apache
+  tags: 'upgrade'
+
 - name: inform about upgrade
   debug:
     msg: 'nextcloud version has been upgraded from {{ nextcloud_installed_version.stdout  }} to {{ nextcloud_upgraded_version.stdout }}'
